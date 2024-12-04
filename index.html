@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Resort</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional Custom Styles */
+        .hero {
+            background-image: url('https://cdn.kiwicollection.com/media/room_images/PR002677/xl/002677-01-five-bedroom-ocean-villa.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+       
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        .badge {
+            background-color: #dc3545;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (fixed-top) -->
+     <!-- Search Bar -->
+<div class="container mt-5">
+    <!-- Search Form -->
+    <form class="d-flex" id="searchForm">
+      <input class="form-control me-2" id="searchInput" type="search" placeholder="Search Rooms" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  
+    <!-- Display Search Results -->
+    <div id="searchResults" class="mt-3"></div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand"  href="#">Deluxe Resort</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facilities">Facilities</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Hero Section -->
+    <section class="hero mt-5" id="home">
+        <div class="container">
+            <h1 class="display-4">Welcome to Deluxe Resort</h1>
+            <p class="lead">Experience the best comfort and hospitality</p>
+            <a href="booknow.html" class="btn btn-success btn-md">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Rooms (Cards) -->
+    <!-- Carousel -->
+    <section id="rooms" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-info mb-5">Our Rooms</h2>
+            <div id="roomsCarousel" class="carousel slide" x>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="deluxe.jpg" class="card-img-top" alt="Room 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Deluxe Room</h5>
+                                        <p class="card-text">Spacious and luxurious, with ocean views.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="suite.jpg" height="276px" class="card-img-top" alt="Room 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Suite Room</h5>
+                                        <p class="card-text">A perfect blend of luxury and comfort.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="family.jpg" height="276px" class="card-img-top" alt="Room 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Family Room</h5>
+                                        <p class="card-text">Ideal for families, offering space and comfort.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="clasic.webp" height="276px" class="card-img-top" alt="Room 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Classic Room</h5>
+                                        <p class="card-text">Perfect for a relaxing getaway.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="supee.jpg" height="276px" class="card-img-top" alt="Room 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Superior Room</h5>
+                                        <p class="card-text">Relaxing stay with stunning resort views.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="Luxury Room.jpg" height="276px" class="card-img-top" alt="Room 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Luxury Room</h5>
+                                        <p class="card-text">Elegance and comfort in our Luxury Room.</p>
+                                        <a href="#" class="btn btn-danger">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#roomsCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#roomsCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities (Accordion) -->
+    <section id="facilities" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center text-info mb-5">Facilities</h2>
+            <div class="accordion" id="facilitiesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Swimming Pool
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#facilitiesAccordion">
+                        <div class="accordion-body">
+                            Enjoy our large outdoor pool with a stunning view of the sea.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Spa & Wellness Center
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#facilitiesAccordion">
+                        <div class="accordion-body">
+                            Rejuvenate your mind and body with our relaxing spa treatments.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Fine Dining
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#facilitiesAccordion">
+                        <div class="accordion-body">
+                            Experience gourmet meals at our in-house restaurant.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-info mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                </div>
+                <!-- Form & Offcanvas -->
+                <div class="col-md-6">
+                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        About
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Welcome to Deluxe Hotel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!-- offcanvas body -->
+                        <div class="offcanvas-body">
+                            <h2 class="text-center">Welcome To Our Hotel</h2>
+                            <p class="text-dark">On her way she met a copy. The copy warned the Little Blind Text,
+                                 that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                               But nothing the copy said could convince her and so it didn't take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                               <img src="aboutimg.jpg" class="rounded-circle" height="350px" width="380px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- table -->
+    <style>
+.table-hover tbody tr:hover{
+    background-color: blue;  /change this to any color you want/
+}
+</style>
+
+    <div class="container">
+        <table class="table-hover table-bordered text-center">
+            <tr>
+                <th>Rooms</th>
+                <th>Available Rooms</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Deluxe Room</td>
+                <td>4</td>
+                <td>$150.00</td>
+            </tr>
+            <tr>
+                <td>Suite Room</td>
+                <td>3</td>
+                <td>$120.00</td>
+            </tr>
+            <tr>
+
+                    <td>Family Room</td>
+                    <td>2</td>
+                    <td>$20.00 </td>
+                
+            </tr>
+            <tr>
+                <td>Classic Room</td>
+                <td>5</td>
+                <td>$130.00</td>
+            </tr>
+            <tr>
+                <td>Superior Room</td>
+                <td>4</td>
+                <td>$300.00</td>
+            </tr>
+            <tr>
+                <td>Luxury Room</td>
+                <td>3</td>
+                <td>$500.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        FeedBack
+       </button>
+       <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModelLabel">Welcome to Deluxe Hotel</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+           </div>
+         </div>
+      </div>
+</div>
+<br>
+<br>
+<button type="button" class="btn btn-success">
+    Available Rooms <span class="badge text-bg-warning rounded-pill">4</span>
+</button>
+
+
+<!-- Pagination -->
+<section class="py-5">
+    <div class="container text-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <h1>hi gooysh</h1>
+            <p>hiiiii</p>
+            <p>&copy; 2024 Deluxe Resort. All rights reserved.</p>
+            <a href="#" class="link-info">Privacy Policy</a> | <a href="#" class="link-info">Terms of Use</a>
+            
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
